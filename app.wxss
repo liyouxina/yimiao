@@ -1,0 +1,92 @@
+@import "/commons/styles/iconfont.wxss";
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: #393a50;
+}
+
+page {
+    background-color: #f5f9fc;
+    font-size: 16px;
+    font-family: -apple-system-font,Source Han Sans,Helvetica Neue,Helvetica,sans-serif;
+}
+
+.page__title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.page__bd {
+    padding-bottom: 40px;
+}
+
+.wrapper {
+    padding: 0 32rpx;
+    box-sizing: border-box;
+}
+
+.home-swiper-item {
+    width: 100%;
+}
+
+.zf-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zf-hearder {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 60rpx;
+}
+
+.zf-header-h5 {
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    color: #222;
+}
+
+.mgt20 {
+    margin-top: 20rpx;
+}
+
+.mgt24 {
+    margin-top: 24rpx;
+}
+
+.empty {
+    width: 100%;
+    text-align: center;
+    margin: 5vh auto 0;
+    font-size: 24rpx;
+}
+
+.empty image {
+    width: 300rpx;
+}
+
+.empty-loading {
+    margin-top: 20vh;
+}
+
+.empty-loading image {
+    width: 500rpx;
+}
+
+.reload {
+    margin: 40rpx auto 0;
+    width: 40%;
+    height: 88rpx;
+    line-height: 88rpx;
+    font-size: 30rpx;
+    text-align: center;
+    color: #fff;
+    background-color: #5292ff;
+}

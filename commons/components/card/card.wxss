@@ -1,0 +1,138 @@
+@import "/commons/styles/iconfont.wxss";
+
+.mg20 {
+    margin-top: 20rpx;
+}
+
+.card {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.card-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-l {
+    width: 90rpx;
+    height: 90rpx;
+    margin: 0 20rpx;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.card-l-pic {
+    width: 100%;
+}
+
+.card-r {
+    box-sizing: border-box;
+    padding: 0 20rpx;
+}
+
+.card-r,.card-r-title {
+    flex: 1;
+    min-width: 0;
+}
+
+.card-r-title {
+    position: relative;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-r-title-tag {
+    width: 54rpx;
+    height: 26rpx;
+    position: absolute;
+    top: 17rpx;
+    left: 0;
+}
+
+.card-r-descst {
+    width: 100%;
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 24rpx;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-r-title-icon {
+    margin-right: 10rpx;
+}
+
+.card-r-descnd {
+    width: 100%;
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 24rpx;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-bottom: 20rpx;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.card-status {
+    min-width: 80rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    color: #999;
+    text-align: right;
+}
+
+.card-tip {
+    width: auto;
+    font-size: 22rpx;
+    text-align: left;
+    margin: 20rpx 20rpx 0 130rpx;
+    color: #999;
+    background-color: #f9f9f9;
+    line-height: 40rpx;
+    border-radius: 8rpx;
+}
+
+.card-tip-text {
+    color: #ec4a85;
+}
+
+.card-btns {
+    justify-content: left;
+    flex-direction: row-reverse;
+    margin-right: 20rpx;
+}
+
+.card-bt {
+    margin: 30rpx 10rpx;
+    width: 120rpx;
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    padding: 0 20rpx;
+    border-radius: 30rpx;
+    color: #333;
+    border: 1px solid #b7c1d2;
+}
+
+.card-bt:first-child {
+    margin-right: 0;
+}
+
+.card-bt-full-blue {
+    background-color: #5192ff;
+    box-shadow: 5rpx 8rpx 27rpx 2rpx rgba(15,76,179,.21);
+    color: #fff;
+    border: 0;
+}

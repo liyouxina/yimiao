@@ -1,0 +1,166 @@
+@import "/commons/styles/iconfont.wxss";
+
+.product-swiper {
+    width: 100%;
+}
+
+.product-swiper.product-swiper-sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.types {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+
+.types::after {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: #e6ecf1;
+}
+
+.types-menu {
+    width: 80rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    color: #919aa1;
+}
+
+.types-menu .iconcaidan {
+    font-size: 36rpx;
+}
+
+.scroll-tab {
+    flex: 1;
+}
+
+.scroll-tab,.scroll-tab-content {
+    overflow-x: auto;
+    background-color: #fff;
+}
+
+.scroll-tab-content .zf-inner,.scroll-tab .zf-inner {
+    height: 88rpx;
+    justify-content: left;
+    box-sizing: border-box;
+}
+
+.scroll-tab-item {
+    white-space: nowrap;
+    color: #919aa1;
+}
+
+.scroll-tab .zf-inner .scroll-tab-item {
+    line-height: 88rpx;
+    padding: 0 30rpx;
+    font-size: 26rpx;
+}
+
+.scroll-tab .zf-inner .scroll-tab-item.scroll-tab-active {
+    font-size: 26rpx;
+    color: #5292ff;
+    line-height: 88rpx;
+    position: relative;
+    font-weight: 700;
+}
+
+.scroll-tab .zf-inner .scroll-tab-item.scroll-tab-active::after {
+    width: 40%;
+    height: 8rpx;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    border-radius: 8rpx;
+    background-color: #5292ff;
+    content: "";
+    z-index: 2;
+}
+
+.scroll-tab-content .zf-inner .scroll-tab-item {
+    margin-left: 30rpx;
+}
+
+.scroll-tab-content .zf-inner .scroll-tab-item.scroll-tab-active .scroll-tab-item-label {
+    color: #fff;
+    background-color: #5192ff;
+}
+
+.scroll-tab-content .zf-inner .scroll-tab-item-label {
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 22rpx;
+    margin-top: 19rpx;
+    padding: 0 20rpx;
+    background-color: #f5f9fc;
+    border-radius: 35rpx;
+    color: #5b656d;
+}
+
+.tm-cover {
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    z-index: 998;
+    background-color: transparent;
+}
+
+.show .tm-cover {
+    visibility: visible;
+    background-color: rgba(0,0,0,.6);
+}
+
+.show .tm-gird {
+    visibility: visible;
+    top: 0;
+}
+
+.tm-gird {
+    visibility: hidden;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    max-height: 80vh;
+    justify-content: left;
+    flex-wrap: wrap;
+    background-color: #f5f9fc;
+    padding: 40rpx 0 0;
+    overflow-y: scroll;
+    z-index: 999;
+    transition: all .5s ease;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tm-i {
+    width: 28%;
+    text-align: center;
+    color: #283036;
+    margin-top: 30rpx;
+    background-color: #fff;
+    margin-left: 20rpx;
+    border-radius: 8rpx;
+}
+
+.tm-i:nth-child(3n+1) {
+    margin-left: 40rpx;
+}
+
+.tm-il {
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 22rpx;
+}

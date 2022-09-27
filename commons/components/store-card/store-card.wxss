@@ -1,0 +1,106 @@
+@import "/commons/styles/iconfont.wxss";
+
+.store-card {
+    position: relative;
+    width: 100%;
+    padding: 40rpx 32rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.store-card::after {
+    width: calc(100% - 64rpx);
+    height: 1px;
+    position: absolute;
+    left: 32rpx;
+    bottom: 0;
+    content: "";
+    background-color: #f5f9fc;
+}
+
+.store-face {
+    width: 90rpx;
+    height: 90rpx;
+    flex-shrink: 1;
+    border-radius: 8rpx;
+    overflow: hidden;
+    background-color: #f5f9fc;
+}
+
+.store-face-pic {
+    width: 100%;
+}
+
+.store-content {
+    flex: 1;
+    margin-left: 20rpx;
+}
+
+.store-content,.store-title {
+    overflow: hidden;
+}
+
+.store-title-status,.store-title-text {
+    display: block;
+}
+
+.store-title-status {
+    position: relative;
+    height: 40rpx;
+    line-height: 40rpx;
+    margin-top: 4rpx;
+    text-align: center;
+    font-size: 20rpx;
+    color: #ff7a10;
+    padding: 0 10rpx;
+    border-radius: 36rpx;
+    box-sizing: border-box;
+    border: 1rpx solid #ff7a10;
+}
+
+.store-title-text {
+    flex: 1;
+    min-width: 0;
+    margin-left: 16rpx;
+    font-size: 31rpx;
+    color: #283036;
+    font-weight: 700;
+}
+
+.store-cell,.store-title-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.store-cell {
+    margin-top: 32rpx;
+    color: #5b656d;
+    font-size: 26rpx;
+    line-height: 32rpx;
+}
+
+.store-cell .iconfont {
+    color: #5b656d;
+    font-size: 32rpx;
+    margin-right: 12rpx;
+}
+
+.store-geo {
+    overflow: hidden;
+}
+
+.store-geo-content {
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.store-distance {
+    color: #aeb8c0;
+    font-size: 24rpx;
+    line-height: 32rpx;
+}

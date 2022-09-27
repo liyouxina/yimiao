@@ -1,0 +1,17 @@
+@import "/commons/styles/iconfont.wxss";
+
+.empty-icon {
+    width: 100%;
+    text-align: center;
+}
+
+.empty-icon .iconfont {
+    font-size: 120rpx;
+    color: #999;
+}
+
+.empty-text {
+    margin-top: 20rpx;
+    font-size: 32rpx;
+    color: #999;
+}

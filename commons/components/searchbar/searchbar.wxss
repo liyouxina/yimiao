@@ -1,0 +1,80 @@
+@import "/commons/styles/iconfont.wxss";
+
+.searchbar {
+    width: 100%;
+}
+
+.search-box {
+    width: 100%;
+    height: 100rpx;
+    box-sizing: border-box;
+    padding: 0 24rpx;
+    background-color: #fff;
+}
+
+.search-curpos {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-top: 25rpx;
+    margin-left: 28rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 26rpx;
+    overflow: hidden;
+}
+
+.search-curpos::after {
+    width: calc(100% - 2px);
+    height: calc(60rpx - 2px);
+    border-radius: 60rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border: 1px solid #5292ff;
+}
+
+.search-curpos,.search-curpos .iconfont {
+    color: #5292ff;
+}
+
+.search-curpos .iconfont {
+    font-size: 26rpx;
+    margin-right: 4rpx;
+}
+
+.search-input {
+    width: 72%;
+    height: 70rpx;
+    line-height: 70rpx;
+    margin: 20rpx auto 0;
+    position: relative;
+}
+
+.search-input-ctrl {
+    width: 100%;
+    height: 70rpx;
+    background-color: #f5f9fc;
+    border-radius: 70rpx;
+    font-size: 28rpx;
+    color: #222;
+    text-align: left;
+    padding-left: 70rpx;
+    box-sizing: border-box;
+}
+
+.searchtip {
+    color: #aeb8c0;
+}
+
+.search-input .iconfont {
+    position: absolute;
+    top: 0;
+    left: 20rpx;
+    display: block;
+    color: #aeb8c0;
+}
