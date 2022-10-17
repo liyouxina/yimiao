@@ -24,7 +24,16 @@ server.on('request', (req, res) => {
 
     if (req.url.startsWith("/api")) {
 
-    } else {
+    }
+	return;
+    switch (req.url) {
+	case "/": {
+	    res.write(format(rf.readFileSync("./index.html","utf-8"), req.url));
+	    break;
+	}
+        case "/index.js": {
+            
+	}
         res.write(format(rf.readFileSync("./index.html","utf-8"), req.url));
         res.end();
     }
