@@ -12,6 +12,7 @@ var handleApi = (req, res) => {
             break;
         }
     }
+    res.end();
 }
 
 var server = http.createServer();
@@ -23,18 +24,18 @@ server.on('request', (req, res) => {
     console.log(`url is ${req.url}`);
 
     if (req.url.startsWith("/api")) {
-
-    }
+        handleApi(req, res);
 	return;
+    }
     switch (req.url) {
 	case "/": {
 	    res.write(format(rf.readFileSync("./index.html","utf-8"), req.url));
 	    break;
 	}
         case "/index.js": {
-            
+            res.write(rf.readFileSync("./index.js","utf-8"));    
+	    break;
 	}
-        res.write(format(rf.readFileSync("./index.html","utf-8"), req.url));
         res.end();
     }
 })
