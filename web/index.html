@@ -3,8 +3,47 @@
         <title>抢</title>
     </head>
     <body>
-        <input id="idCard" placeholder="身份证号"/>
-        <input id="city" placeholder="城市"/>
-        <input id="name" placeholder="疫苗名称"/>
+        <input id="idCard" placeholder="身份证号"/><br>
+        <input id="city" placeholder="城市"/><br>
+        <input id="name" placeholder="疫苗名称"/><br>
+        <button id="start">开始</button><button id="query">查询</button><br>
+        <span id="result"></span>
+        <script type="text/javascript">
+            var result = document.getElementById("result");
+
+            var idCard = document.getElementById("idCard");
+            var city = document.getElementById("city");
+            var name = document.getElementById("name");
+
+            var startButton = document.getElementById("start");
+            var queryButton = document.getElementById("query");
+            startButton.onclick = function (e) {
+                var valiString = isValid();
+                if (valiString != null) {
+                    result.innerHTML = valiString;
+                    return;
+                }
+            }
+            queryButton.onclick = function (e) {
+                var valiString = isValid();
+                if (valiString != null) {
+                    result.innerHTML = valiString;
+                    return;
+                }
+            }
+
+            function isValid() {
+                if (idCard.innerHTML == "") {
+                    return "身份证不可为空";
+                }
+                if (city == "") {
+                    return "城市不可为空";
+                }
+                if (name == "") {
+                    return "疫苗名称不可为空";
+                }
+                return null;
+            }
+        </script>
     </body>
 </html>
