@@ -5,7 +5,7 @@
     <body>
         <input id="idCard" placeholder="身份证号"/><br>
         <input id="city" placeholder="城市"/><br>
-        <input id="name" placeholder="疫苗名称"/><br>
+        <input id="yimiaoame" placeholder="疫苗名称"/><br>
         <button id="start">开始</button><button id="query">查询</button><br>
         <span id="result"></span>
         <script type="text/javascript">
@@ -13,7 +13,7 @@
 
             var idCard = document.getElementById("idCard");
             var city = document.getElementById("city");
-            var name = document.getElementById("name");
+            var yimiaoame = document.getElementById("yimiaoame");
 
             var startButton = document.getElementById("start");
             var queryButton = document.getElementById("query");
@@ -23,6 +23,13 @@
                     result.innerHTML = valiString;
                     return;
                 }
+                const xhr = new XMLHttpRequest()
+                xhr.open('GET', `http://localhost:3000/api/submitTask?idCard=`+idCard.value+`&city=`+city.value+`&name=`+yimiaoame.value)
+                xhr.send()
+                xhr.onreadystatechange = function(){
+                    console.log(xhr.response);
+                }
+
             }
             queryButton.onclick = function (e) {
                 var valiString = isValid();
@@ -33,13 +40,13 @@
             }
 
             function isValid() {
-                if (idCard.innerHTML == "") {
+                if (idCard.value == "") {
                     return "身份证不可为空";
                 }
-                if (city == "") {
+                if (city.value == "") {
                     return "城市不可为空";
                 }
-                if (name == "") {
+                if (name.value == "") {
                     return "疫苗名称不可为空";
                 }
                 return null;
