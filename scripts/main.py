@@ -15,6 +15,7 @@ FAIL = "fail"
 waitMark = {}
 
 def queryEnable(city, yimiaoName):
+    requests.get("https://", {}, {})
     return
 
 def waitForEnableAndQiang(key):
