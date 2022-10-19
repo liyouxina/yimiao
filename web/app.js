@@ -73,7 +73,9 @@ var handleApi = (req, res) => {
                 console.log(err);
                 return null;
             }
-            res.write(WENAN[value]);
+            if (value) {
+                res.write(WENAN[value]);
+            }
             res.end();
         });
         return;
