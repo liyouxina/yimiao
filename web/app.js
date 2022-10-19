@@ -75,6 +75,8 @@ var handleApi = (req, res) => {
             }
             if (value) {
                 res.write(WENAN[value]);
+            } else {
+                res.write("没有查到此记录");
             }
             res.end();
         });
